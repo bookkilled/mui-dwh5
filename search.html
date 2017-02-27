@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+		  pullRefresh : {
+		    container:refreshContainer,//待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+		    up : {
+		      height:50,//可选.默认50.触发上拉加载拖动距离
+		      auto:true,//可选,默认false.自动上拉加载一次
+		      contentrefresh : "正在加载...",//可选，正在加载状态时，上拉加载控件上显示的标题内容
+		      contentnomore:'没有更多数据了',//可选，请求完毕若没有更多数据时显示的提醒内容；
+		      callback :pullfresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+		    }
+		  }
+		});
+    </script>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <div class="mui-input-row mui-search">
+        <input id="keywords" type="search" class="mui-input-clear" placeholder="Search"/>
+    </div>
+</header>
+<div class="mui-content">
+   <ul class="mui-table-view">
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="cus-table-view-cell">
+        <a href="javascript:;">
+            <img class="cus-media-img" src="./images/shuijiao.jpg">
+            <i class="cus-media-play"></i>
+            <span class="cus-media-tip">开播时间：10:00-10:30</span>
+            <div class="cus-media-body">
+                <p class="cus-media-tit">南海仲裁丨热血过后，你的投资如何“避险”？</p>
+                <p class='cus-media-tag'><span>A股</span><span>策略</span></p>
+                <div class="cus-media-person">
+                		<img class="cus-media-atvr" alt="头像" src="images/cbd.jpg" width="30" />
+                		<p class="cus-media-name">
+                			<span>灵芝月</span>
+                			<span>东吴证券资深投资顾问</span>
+                		</p>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<div class="search-mask" id="searchMask">
+	<p class="impkeys-tit">关键词</p>
+	<div class="impkeys">
+		<span>策略</span><span>今日观点</span><span>秀才成灰</span>
+	</div>
+	<p class="impkeys-tit">热门搜索</p>
+	<div class="impkeys">
+		<span>策略</span><span>今日观点</span><span>秀才成灰</span>
+	</div>
+</div>
+</div>
+<script>
+	var keywordsDom = document.getElementById("keywords");
+	var searchMaskDom = document.getElementById("searchMask");
+	var keysDom = document.querySelectorAll('.impkeys span')
+	keywordsDom.addEventListener('focus',function(e){
+      		searchMaskDom.style.display = 'block';
+    },false);
+	[].forEach.call(keysDom, function(item, index){
+		item.addEventListener('touchend', function(){
+			// 查询参数向下传递
+			console.log(item.innerHTML);
+			setTimeout(function(){
+				searchMaskDom.style.display = 'none';
+			}, 5e2)
+		}, false);
+	});
+	function pullfresh() {
+		//业务逻辑代码，比如通过ajax从服务器获取新数据；
+		// ..
+	    //注意：
+	    //1、加载完新数据后，必须执行如下代码，true表示没有更多数据了：
+	    //2、若为ajax请求，则需将如下代码放置在处理完ajax响应数据之后
+	    this.endPullupToRefresh(true|false);
+	}
+</script>
+</body>
+</html>
